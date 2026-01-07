@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights.connected"
+    },
+    "storage1": {
+      "type": "storage.emulated"
+    }
+  }
+}

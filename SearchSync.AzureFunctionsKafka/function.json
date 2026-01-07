@@ -1,0 +1,14 @@
+{
+      "scriptFile": "../bin/Debug/net8.0/SearchSync.AzureFunctionsKafka.dll",
+      "entryPoint": "SearchSync.AzureFunctionsKafka.KafkaListenerFunction.Run",
+      "bindings": [
+        {
+          "type": "kafkaTrigger",
+          "direction": "in",
+          "name": "kafkaEvent",
+          "brokerList": "%KafkaBrokerList%",
+          "topic": "%KafkaTopic%",
+          "consumerGroup": "$Default"
+        }
+      ]
+    }
